@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hello World!!!</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="MyCtrl.js"></script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+    <input type="text" ng-model="age">
+    <h1>{{name}}</h1>
+    User 01 age:
+    <h2>{{age}}</h2>
+    <ul>
+        <li ng-repeat=" abc in countries">{{abc}}</li>
+    </ul>
+</div>
+<article ng-controller="myCtrl2">
+    <ul>
+        <li ng-repeat="xyz in countries2">The population of {{xyz.name}} is {{xyz.population}} and is {{worldPerc(xyz.population)}}</li>
+    </ul>
+
+</article>
+
+
+</body>
+</html>
